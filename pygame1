@@ -12,3 +12,11 @@ There is no way to get the return value from the Sprite.update() methods.
 
 rect 的坐标在左上角
 
+创建方块pygame.Rect(0,0,settings.bullet_width,settings.bullet.height)
+0，0是坐标，后面是方块宽度和长度
+
+画方块
+pygame.draw.rect(self.screen,self.color,self.rect）
+载体，颜色，方块
+
+attribute属性
