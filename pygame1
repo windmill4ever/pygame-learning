@@ -6,3 +6,9 @@ Calls the update() method on all Sprites in the Group. The base Sprite class has
 There is no way to get the return value from the Sprite.update() methods.
 
 #must def 'update()',but the other name,such as def 'update_position()'....
+
+
+
+
+rect 的坐标在左上角
+
