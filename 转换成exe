@@ -3,3 +3,18 @@ pip  install pyinstaller
 在界面中输入 pyinstaller -F -w -i tubiao.ico pyexe.py（-i 后面跟着的是exe程序的图标，最后跟.py文件）
 
 （-F：产生一个文件；-w：使用Windows子系统执行，不会打开命令行）
+
+
+Python 相对路径问题："No such file or directory"
+如果你取相对路径不是在主文件里，可能就会有相对路径问题："No such file or directory"。
+因为 python 的相对路径，相对的都是主文件。
+如下目录结构：
+
+| -- main.py
+     | -- conf.py
+     | -- start.png
+| -- config.txt
+main.py 是主文件。
+conf.py 里引用 config.txt 用相对路径。
+如果用 . 或 … 相对的是 main.py，所以用 "./config.txt"，相对于 main.py 是同一个目录下。
+. 指当前文件所在的文件夹，… 指当前文件的上一级目录。
