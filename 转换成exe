@@ -1,9 +1,12 @@
 pip  install pyinstaller
 
-在界面中输入 pyinstaller -F -w -i tubiao.ico pyexe.py（-i 后面跟着的是exe程序的图标，最后跟.py文件）
+> pyinstaller -F -w -i tubiao.ico pyexe.py
 
-（-F：产生一个文件；-w：使用Windows子系统执行，不会打开命令行）
+# -F：产生exe文件；     -w：使用Windows子系统执行，不会打开命令行
+# -i 跟exe程序的图标     
+# 最后跟.py文件
 
+注意cmd的位置
 
 Python 相对路径问题："No such file or directory"
 如果你取相对路径不是在主文件里，可能就会有相对路径问题："No such file or directory"。
